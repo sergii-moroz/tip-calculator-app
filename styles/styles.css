@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #c5e4e7;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  margin: 5rem 0 3.5rem 0;
+}
+
+.card {
+  background-color: white;
+  width: 100%;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+  padding: 2.5rem;
+}
+
+.card .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.card .input .label-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.6rem 0;
+}
+
+.card .input .label-wrapper label {
+  color: #5e7a7d;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card .input .label-wrapper .error-msg {
+  color: indianred;
+  font-weight: 700;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+
+.card .input .label-wrapper .show-error-msg {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.card .input .inp-text {
+  background-color: #f4fafa;
+  border: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: #00494d;
+  font-family: 'Space Mono', monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: right;
+  padding: 0.5rem 2.4rem;
+}
+
+.card .input .inp-text:focus {
+  outline: none;
+  border: 2px solid #26c0ab;
+}
+
+.card .input .inp-wrapper {
+  position: relative;
+}
+
+.card .input .inp-wrapper img {
+  position: absolute;
+  left: 2.4rem;
+  top: 1.5rem;
+}
+
+.card .input .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 1.2rem;
+}
+
+.card .input .btn-wrapper .btn {
+  width: 46%;
+  text-align: center;
+  background-color: #00494d;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card .input .btn-wrapper .btn:hover {
+  background-color: #9fe8df;
+}
+
+.card .input .btn-wrapper .btn-active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.card .input .btn-wrapper .inp-text {
+  width: 46%;
+}
+
+.card .output {
+  background-color: #00494d;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 2.2rem;
+}
+
+.card .output .line-wrapper .line-output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.4rem 0 2.4rem 0;
+}
+
+.card .output .line-wrapper .line-output .title {
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.card .output .line-wrapper .line-output .desc {
+  color: #7f9c9f;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.card .output .line-wrapper .line-output .value {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.card .output .btn {
+  width: 100%;
+  background-color: #26c0ab;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00494d;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  margin-top: 3.4rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.card .output .btn:hover {
+  background-color: #9fe8df;
+}
+
+@-webkit-keyframes show-err {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes show-err {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 64%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: 2.5rem;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 3.4rem;
+    gap: 1.5rem;
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 30px rgba(0, 0, 0, 0.05);
+  }
+  .card .input {
+    width: 105%;
+    padding: 0 3.5rem 1.5rem 1.5rem;
+  }
+  .card .input .label-wrapper {
+    padding: 1rem 0;
+  }
+  .card .input .btn-wrapper .btn {
+    width: 30.5%;
+  }
+  .card .input .btn-wrapper .inp-text {
+    width: 30.5%;
+  }
+  .card .output {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4rem;
+  }
+  .card .output .line-wrapper .line-output {
+    margin: 0.5rem 0 2.4rem 0;
+  }
+  .card .output .line-wrapper .line-output .value {
+    font-size: 4.6rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

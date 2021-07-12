@@ -1,0 +1,199 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.logo {
+    margin: 5rem 0 3.5rem 0;
+}
+
+.card {
+    background-color: $white;
+    width: 100%;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    padding: 2.5rem;
+
+    .input {
+        //border: 1px solid magenta; //temporary
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .label-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.6rem 0;
+
+            label {
+                color: $dark-grayish-cyan-1;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+            .error-msg {
+                color: indianred;
+                font-weight: 700;
+                font-size: 1.5rem;
+                opacity: 0;
+            }
+
+            .show-error-msg {
+                transition: opacity 1s ease-in-out;
+                opacity: 1;
+            }
+        }
+
+        .inp-text {
+            background-color: $light-grayish-cyan-2;
+            border: none;
+            width: 100%;
+            border-radius: 0.5rem;
+            color: $very-dark-cyan;
+            font-family: 'Space Mono', monospace;
+            font-size: 2.4rem;
+            font-weight: 700;
+            text-align: right;
+            padding: 0.5rem 2.4rem;
+
+            &:focus {
+                outline: none;
+                border: 2px solid $strong-cyan;
+            }
+        }
+
+        .inp-wrapper {
+            position: relative;
+
+            img {
+                position: absolute;
+                left: 2.4rem;
+                top: 1.5rem;
+            }
+        }
+
+        .btn-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            //border: 1px solid black; //temporary
+            padding-top: 1.2rem;
+
+            .btn {
+                width: 46%;
+                text-align: center;
+                background-color: $very-dark-cyan;
+                color: $white;
+                font-size: 2.4rem;
+                font-weight: 700;
+                border-radius: 0.5rem;
+                padding: 0.6rem 0;
+                transition: all 0.5s ease;
+            
+                &:hover {
+                    background-color: $btn-hover;
+                }
+            }
+
+            .btn-active {
+                background-color: $strong-cyan;
+                color: $very-dark-cyan;
+            }
+
+            .inp-text {
+                width: 46%;
+            }
+        }
+
+    }
+
+    .output {
+        background-color: $very-dark-cyan;
+        width: 100%;
+        border-radius: 1.5rem;
+        padding: 2.2rem;
+
+        .line-wrapper {
+            .line-output {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 1.4rem 0 2.4rem 0;
+
+                .title {
+                    color: $white;
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                }
+
+                .desc {
+                    color: $dark-grayish-cyan-2;
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                }
+
+                .value {
+                    color: $strong-cyan;
+                    font-weight: 700;
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .btn {
+            width: 100%;
+            background-color: $strong-cyan;
+            text-transform: uppercase;
+            text-align: center;
+            color: $very-dark-cyan;
+            font-size: 2rem;
+            font-weight: 700;
+            border-radius: 0.5rem;
+            padding: 1rem 0;
+            margin-top: 3.4rem;
+            transition: all 0.5s ease;
+            
+            &:hover {
+                background-color: $btn-hover;
+            }
+        }
+    }
+}
+
+
+@keyframes show-err {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+

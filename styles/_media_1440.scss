@@ -1,0 +1,50 @@
+@media screen and (min-width: 1440px){
+    .card {
+        width: 64%;
+        flex-direction: row;
+        border-radius: 2.5rem;
+        align-items: stretch;
+        padding: 3.4rem;
+        gap: 1.5rem;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.05), 0px 20px 30px rgba(0,0,0,0.05);
+    
+        .input {
+            width: 105%;
+            //border: 1px solid black; //temporary
+            padding: 0 3.5rem 1.5rem 1.5rem;
+    
+            .label-wrapper {
+                padding: 1rem 0;
+            }
+    
+            .btn-wrapper {
+                .btn {
+                    width: 30.5%;
+                }
+    
+                .inp-text {
+                    width: 30.5%;
+                }
+            }
+    
+        }
+    
+        .output {
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 4rem;
+    
+            .line-wrapper {
+                .line-output {
+                    margin: 0.5rem 0 2.4rem 0;
+    
+                    .value {
+                        font-size: 4.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
