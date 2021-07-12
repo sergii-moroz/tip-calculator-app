@@ -21,11 +21,6 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
 
-### Screenshot
-
-![desktop](./desktop.png)
-![mobile](./mobile.png)
-
 ### Links
 
 - Solution URL: [GitHub](https://github.com/sergii-moroz/tip-calculator-app)
@@ -43,3 +38,8 @@ Users should be able to:
 
 - Website - [YouTube]()
 - Frontend Mentor - [link](https://www.frontendmentor.io/profile/sergii-moroz)
+
+### Screenshot
+
+![desktop](./desktop.png)
+![mobile](./mobile.png)
