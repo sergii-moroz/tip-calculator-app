@@ -27,7 +27,7 @@ Users should be able to:
 
 ## My process
 
-[YouTube]()
+[YouTube](https://youtu.be/Bz_3odLrekg)
 
 ### Built with
 
@@ -36,7 +36,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [YouTube]()
+- Website - [YouTube](https://youtu.be/Bz_3odLrekg)
 - Frontend Mentor - [link](https://www.frontendmentor.io/profile/sergii-moroz)
 
 ### Screenshot
